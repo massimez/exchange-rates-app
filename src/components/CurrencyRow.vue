@@ -102,4 +102,9 @@ const isPositiveChange = computed(() => {
     display: flex;
   }
 }
+@include _sm {
+  .row {
+    grid-template-columns: 40px repeat(3, 1fr);
+  }
+}
 </style>
