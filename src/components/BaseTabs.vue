@@ -41,16 +41,16 @@ defineProps({
   width: 100%;
   & button {
     width: 50%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-default;
     padding: 10px;
     &:hover {
-      background-color: aqua;
+      background-color: $primary;
       cursor: pointer;
     }
   }
 }
 .active {
-  background-color: aqua;
+  background-color: $primary;
 }
 </style>

@@ -30,11 +30,12 @@ const handleConversion = async () => {
       amount,
     }
   );
-  amountResultConversion.value = result.toFixed(5);
+  amountResultConversion.value = result;
   conversionRate.value = cRate;
 };
 
 const handleReverse = () => {
+  amountToConvert.value = amountResultConversion.value;
   const temp = fromCurrency.value;
   fromCurrency.value = toCurrency.value;
   toCurrency.value = temp;
@@ -134,10 +135,10 @@ watch([amountToConvert, fromCurrency, toCurrency], () => {
   &__select {
     width: 80px;
     height: 50px;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 1px solid $black;
+    border-radius: $border-radius-default;
     padding: 3px;
-    background-color: white;
+    background-color: $white;
   }
   &__input {
     height: 50px;
@@ -148,8 +149,8 @@ watch([amountToConvert, fromCurrency, toCurrency], () => {
     align-items: center;
     width: 30px;
     height: 30px;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 1px solid $black;
+    border-radius: $border-radius-default;
     padding: 3px;
     cursor: pointer;
     &:hover {

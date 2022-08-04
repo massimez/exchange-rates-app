@@ -79,12 +79,12 @@ const isPositiveChange = computed(() => {
   align-items: center;
   padding: 10px;
   &:hover {
-    background-color: rgb(60, 134, 134);
+    background-color: $gray-400;
   }
   &__switch-icon {
     &:hover {
       cursor: pointer;
-      color: rgb(18, 58, 58);
+      color: $gray-800;
     }
   }
   &__changeIndex {

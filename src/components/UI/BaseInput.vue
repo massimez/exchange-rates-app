@@ -47,21 +47,21 @@ const updateContent = (event) => {
   width: 100%;
   height: 100%;
   min-height: 30px;
-  border-radius: 5px;
-  background-color: #f5f5f5;
+  border-radius: $border-radius-default;
+  background-color: $white-50;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   &__input {
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 5px;
+    border-radius: $border-radius-default;
     outline: none;
     padding: 0 10px;
     font-size: 16px;
     font-weight: 500;
-    color: #000;
+    color: $black;
     &::placeholder {
-      color: #bdbdbd;
+      color: $white-400;
     }
   }
 }
